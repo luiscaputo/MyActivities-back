@@ -1,6 +1,6 @@
 import "typeorm";
 import express, {NextFunction, Request, Response} from "express";
-import ".database";
+import "./database";
 import { router } from "./routes";
 
 const app = express();
