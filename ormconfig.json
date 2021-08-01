@@ -1,6 +1,9 @@
 {
-  "type": "sqlite",
-  "database":"src/database/database.sqlite",
+  "type": "mysql",
+  "host":"localhost",
+  "username":"root",
+  "password":"",
+  "database":"my_activities",
   "migrations": ["src/database/migrations/*.ts"],
   "entities": ["src/entities/*.ts"],
   "cli": {

@@ -9,7 +9,7 @@ export class user1627515344852 implements MigrationInterface {
                 columns:[
                     {
                         name: "id",
-                        type: "uuid",
+                        type: "int",
                         isPrimary: true,
                     },
                     {
@@ -25,14 +25,18 @@ export class user1627515344852 implements MigrationInterface {
                         type: "Boolean",
                     },
                     {
+                        name: "password",
+                        type: "varchar",
+                    },
+                    {
                         name: "created_at",
-                        type: "timestamp",
-                        default: "now()",
+                        type: "datetime",
+                        default: "current_timestamp",
                     },
                     {
                         name: "updated_at",
-                        type: "timestamp",
-                        default: "now()",
+                        type: "datetime",
+                        default: "current_timestamp",
                     }
                 ]
             })

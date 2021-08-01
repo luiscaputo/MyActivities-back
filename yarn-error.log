@@ -1,30 +1,29 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarn add bycriptjs --save
+  C:\Program Files\nodejs\node.exe C:\Users\Nelo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add sqlite3 --save
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Nelo\bin;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Users\Nelo\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\wamp64\bin\php\php7.3.5;C:\composer;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Nelo\AppData\Local\Microsoft\WindowsApps;C:\Users\Nelo\AppData\Roaming\Composer\vendor\bin;C:\Users\Nelo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nelo\AppData\Roaming\npm
 
 Yarn version: 
   1.22.10
 
 Node version: 
-  10.19.0
+  14.17.4
 
 Platform: 
-  linux x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bycriptjs: Not found
-      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
-      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141634:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141556:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1145:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: https://registry.yarnpkg.com/mysql: tunneling socket could not be established, statusCode=405
+      at ClientRequest.onConnect (C:\Users\Nelo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:152224:19)
+      at Object.onceWrapper (events.js:520:26)
+      at ClientRequest.emit (events.js:400:28)
+      at Socket.socketOnData (_http_client.js:553:11)
+      at Socket.emit (events.js:400:28)
+      at addChunk (internal/streams/readable.js:290:12)
+      at readableAddChunk (internal/streams/readable.js:265:9)
+      at Socket.Readable.push (internal/streams/readable.js:204:10)
+      at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
 
 npm manifest: 
   {
@@ -46,6 +45,8 @@ npm manifest:
       "@types/express": "^4.17.13",
       "express": "^4.17.1",
       "g": "^2.0.1",
+      "mysql": "^2.18.1",
+      "node-pre-gyp": "^0.17.0",
       "nodemon": "^2.0.12",
       "sqlite3": "^5.0.2",
       "typeorm": "^0.2.34"
